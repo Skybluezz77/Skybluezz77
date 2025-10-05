@@ -1,45 +1,119 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Diri</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 400px;
-      margin: 20px auto;
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    h1 {
-      margin: 10px 0 5px;
-    }
-    p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Anda - Portofolio Kreatif</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <img src=IMG-20250926-WA0000.jpg alt="Foto Profil">
-    <h1>Aldi Abram Mintia</h1>
-    <p>Halo saya Aldi abram mintia saya adalah pelajar kelas 10 saya suka belajar hal baru dan suka berkembang, Saya suka mencoba pengalaman baru dan terbuka untuk menambah wawasan
-Hobi saya bermain game, dan berolahraga minat saya suka baca komik</p>
-  </div>
+
+    <header id="navbar">
+        <div class="container">
+            <h1 class="logo">N.A.</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#kontak" class="cta-button">Hubungi Saya</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <p class="greeting">Halo, saya</p>
+                <h2>**Nama Lengkap Anda**</h2>
+                <h1>*Desainer UX/UI Fokus Konversi*</h1>
+                <p class="description">
+                    Membantu bisnis meningkatkan pengalaman pengguna dan mendorong pertumbuhan melalui desain yang teruji dan berpusat pada data.
+                </p>
+                <a href="#portofolio" class="cta-primary">Lihat Karya Pilihan</a>
+            </div>
+            <div class="hero-image">
+                <img src="foto-anda.jpg" alt="Foto Profil Profesional"> 
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolio" class="portfolio-section">
+        <div class="container">
+            <h2>Portofolio Pilihan</h2>
+            <p class="subtitle">Beberapa proyek terbaru yang saya kerjakan.</p>
+            
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <img src="proyek1.jpg" alt="Proyek Aplikasi Mobile">
+                    <h3>Aplikasi Mobile E-Commerce</h3>
+                    <p>Peran: Lead UX Researcher & Designer</p>
+                    <a href="#" class="cta-secondary">Baca Studi Kasus →</a>
+                </div>
+                <div class="project-card">
+                    <img src="proyek2.jpg" alt="Proyek Redesign Website">
+                    <h3>Website Perusahaan B2B Redesign</h3>
+                    <p>Peran: Front-End Developer</p>
+                    <a href="#" class="cta-secondary">Baca Studi Kasus →</a>
+                </div>
+                <div class="project-card">
+                    <img src="proyek3.jpg" alt="Proyek Branding">
+                    <h3>Branding Visual Startup</h3>
+                    <p>Peran: Graphic Designer</p>
+                    <a href="#" class="cta-secondary">Baca Studi Kasus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="about-section">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <p>
+                    Saya adalah profesional [Jabatan Anda] yang bersemangat dalam [Minat Utama]. Filosofi kerja saya adalah menggabungkan kreativitas dengan solusi yang didorong oleh data.
+                </p>
+                
+                <h3>Keahlian Inti</h3>
+                <ul class="skills-list">
+                    <li><span class="skill-item">Figma</span></li>
+                    <li><span class="skill-item">HTML & CSS</span></li>
+                    <li><span class="skill-item">Wireframing & Prototyping</span></li>
+                    <li><span class="skill-item">User Research</span></li>
+                </ul>
+                
+                <h3>Klien Terpercaya</h3>
+                <div class="client-logos">
+                    <img src="logo-client-a.png" alt="Client A">
+                    <img src="logo-client-b.png" alt="Client B">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="contact-section">
+        <div class="container">
+            <h2>Mari Mulai Proyek Anda</h2>
+            <p>Saya terbuka untuk kesempatan kerja lepas, kontrak, atau posisi penuh waktu. Sampaikan detail singkat tentang proyek Anda.</p>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Nama Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <textarea name="message" placeholder="Pesan Singkat Proyek Anda..." rows="5" required></textarea>
+                <button type="submit" class="cta-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nama Anda. Dibuat dengan ❤.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/namaprofil" target="_blank">LinkedIn</a>
+                <a href="https://dribbble.com/namaprofil" target="_blank">Dribbble</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+                  </html>
